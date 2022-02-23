@@ -1,0 +1,50 @@
+{
+    "name": "@multiversy/ui",
+    "private": false,
+    "version": "0.0.5",
+    "description": "Stencil Component Starter",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.js",
+    "es2015": "dist/esm/index.mjs",
+    "es2017": "dist/esm/index.mjs",
+    "types": "dist/types/components.d.ts",
+    "collection": "dist/collection/collection-manifest.json",
+    "collection:main": "dist/collection/index.js",
+    "unpkg": "dist/multiverse-ui/multiverse-ui.esm.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    },
+    "files": [
+        "./"
+    ],
+    "scripts": {
+        "build": "stencil build --docs",
+        "start": "stencil build --dev --watch --serve",
+        "test": "stencil test --spec --e2e",
+        "test.spec.watch": "stencil test --spec --watchAll",
+        "test.watch": "stencil test --spec --e2e --watchAll",
+        "generate": "stencil generate"
+    },
+    "dependencies": {
+        "@stencil/core": "^2.13.0",
+        "@stencil/sass": "^1.5.2"
+    },
+    "devDependencies": {
+        "@pxtrn/storybook-addon-docs-stencil": "^6.4.0",
+        "@stencil/angular-output-target": "^0.4.0",
+        "@stencil/react-output-target": "^0.3.1",
+        "@types/jest": "^27.0.3",
+        "jest": "^27.4.5",
+        "jest-cli": "^27.4.5",
+        "puppeteer": "^10.0.0"
+    },
+    "jest": {
+        "testEnvironment": "jest-environment-jsdom-thirteen"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    }
+}

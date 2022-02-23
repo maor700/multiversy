@@ -1,0 +1,549 @@
+{
+  "timestamp": "2022-02-14T11:36:24",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.13.0",
+    "typescriptVersion": "4.3.5"
+  },
+  "components": [
+    {
+      "filePath": "./src/components/mtv-cross-iframe/mtv-cross-iframe.tsx",
+      "encapsulation": "shadow",
+      "tag": "mtv-cross-iframe",
+      "readme": "# mtv-cross-iframe\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "appRoute",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "app-route",
+          "reflectToAttr": false,
+          "docs": "Disable loader on iframe loading;",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "disableLoader",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disable-loader",
+          "reflectToAttr": false,
+          "docs": "Disable loader on iframe loading;",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "fitToContent",
+          "type": "boolean | string",
+          "mutable": true,
+          "attr": "fit-to-content",
+          "reflectToAttr": true,
+          "docs": "Fit size of the Element to the content of the iframe;",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "headCode",
+          "type": "string",
+          "mutable": false,
+          "attr": "head-code",
+          "reflectToAttr": false,
+          "docs": "Head code to inject to the iframe, styles, links and scripts;",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "mutable": false,
+          "attr": "name",
+          "reflectToAttr": false,
+          "docs": "The app name id.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "src",
+          "type": "string",
+          "mutable": true,
+          "attr": "src",
+          "reflectToAttr": true,
+          "docs": "The url of the gust app to be hosted.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "mtv-main"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "mtv-main": [
+          "mtv-cross-iframe"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/mtv-main/mtv-main.tsx",
+      "encapsulation": "none",
+      "tag": "mtv-main",
+      "readme": "# mtv-main\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "mtv-window",
+        "mtv-window-header",
+        "mtv-cross-iframe"
+      ],
+      "dependencyGraph": {
+        "mtv-main": [
+          "mtv-window",
+          "mtv-window-header",
+          "mtv-cross-iframe"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/mtv-modal-portal/mtv-modal-portal.tsx",
+      "encapsulation": "none",
+      "tag": "mtv-modal-portal",
+      "readme": "# mtv-modal-portal\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "hideOverlay",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "hide-overlay",
+          "reflectToAttr": false,
+          "docs": "Hide overlay element",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "nameId",
+          "type": "string",
+          "mutable": false,
+          "attr": "name-id",
+          "reflectToAttr": false,
+          "docs": "Id for the portal element",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "overlayColor",
+          "type": "string",
+          "mutable": false,
+          "attr": "overlay-color",
+          "reflectToAttr": false,
+          "docs": "Overlay background color",
+          "docsTags": [],
+          "default": "'rgba(0, 0, 0, 0.8)'",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "targetContainer",
+          "type": "HTMLElement",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "Element To put the portal into. it's Can be element from current document or even element from another document like iframe parent body.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "HTMLElement"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "portalLoaded",
+          "detail": "HTMLElement",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/mtv-portal/mtv-portal.tsx",
+      "encapsulation": "shadow",
+      "tag": "mtv-portal",
+      "readme": "# mtv-portal\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "headInlineHtml",
+          "type": "string",
+          "mutable": false,
+          "attr": "head-inline-html",
+          "reflectToAttr": false,
+          "docs": "HTML head inline code (scripts, links, styles ect...)  to inject to the targetContainer in addition to the portaled element itself;",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "nameId",
+          "type": "string",
+          "mutable": false,
+          "attr": "name-id",
+          "reflectToAttr": false,
+          "docs": "Uniqe name for internal classes names and ect",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "targetContainer",
+          "type": "HTMLElement",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "The target container that will contain the portaled element.",
+          "docsTags": [],
+          "default": "window?.top?.document?.body",
+          "values": [
+            {
+              "type": "HTMLElement"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "elementLandedInTarget",
+          "detail": "{ portalElm: HTMLElement; target: HTMLElement; }",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "elementLandedInTarget event fired when the element complete to land on targetContainer.",
+          "docsTags": []
+        },
+        {
+          "event": "portalLoaded",
+          "detail": "HTMLElement",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "portalLoaded event fired when the portal element complete to load.",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "mtv-tooltip-portal"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "mtv-tooltip-portal": [
+          "mtv-portal"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/mtv-tooltip-portal/mtv-tooltip-portal.tsx",
+      "encapsulation": "none",
+      "tag": "mtv-tooltip-portal",
+      "readme": "# mtv-tooltip-portal\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "background",
+          "type": "string",
+          "mutable": false,
+          "attr": "background",
+          "reflectToAttr": false,
+          "docs": "Background color of the tooltip;",
+          "docsTags": [],
+          "default": "'transparent'",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": true,
+          "required": false
+        },
+        {
+          "name": "nameId",
+          "type": "string",
+          "mutable": false,
+          "attr": "name-id",
+          "reflectToAttr": false,
+          "docs": "Uniqe name for internal classes names and ect",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "position",
+          "type": "{ x: number; y: number; }",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "The Position of the portaled element.",
+          "docsTags": [],
+          "default": "{ x: 0, y: 0 }",
+          "values": [
+            {
+              "type": "{ x: number; y: number; }"
+            }
+          ],
+          "optional": true,
+          "required": false
+        },
+        {
+          "name": "targetContainer",
+          "type": "HTMLElement",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "The target container that will contain the portaled element.",
+          "docsTags": [],
+          "default": "window?.top?.document?.body",
+          "values": [
+            {
+              "type": "HTMLElement"
+            }
+          ],
+          "optional": true,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "tooltipBlur",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "tooltipBlur event fired when tooltip element out of focus, or in shortly - blurred;",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "mtv-portal"
+      ],
+      "dependencyGraph": {
+        "mtv-tooltip-portal": [
+          "mtv-portal"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/mtv-window/mtv-window.tsx",
+      "encapsulation": "scoped",
+      "tag": "mtv-window",
+      "readme": "# mtv-window\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "name",
+          "type": "string",
+          "mutable": false,
+          "attr": "name",
+          "reflectToAttr": false,
+          "docs": "Uniqe name for internal classes names and ect",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "mtv-main"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "mtv-main": [
+          "mtv-window"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/mtv-window-header/mtv-window-header.tsx",
+      "encapsulation": "none",
+      "tag": "mtv-window-header",
+      "readme": "# mtv-window-header\n\n\n",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "windowName",
+          "type": "string",
+          "mutable": false,
+          "attr": "window-name",
+          "reflectToAttr": false,
+          "docs": "The window name",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "changeDisplayMode",
+          "detail": "DisplayModes.closed | DisplayModes.dettached | DisplayModes.fullscreen | DisplayModes.minimized | DisplayModes.normal",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emit event to change window display mode",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "mtv-main"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "mtv-main": [
+          "mtv-window-header"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2022-01-31T11:12:29",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.13.0",
+    "typescriptVersion": "4.3.5"
+  },
+  "components": [
+    {
+      "filePath": "./src/components/mtv-cross-iframe/mtv-cross-iframe.tsx",
+      "encapsulation": "shadow",
+      "tag": "mtv-cross-iframe",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "src",
+          "type": "string",
+          "mutable": true,
+          "attr": "src",
+          "reflectToAttr": true,
+          "docs": "The url of the gust app to be hosted.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    }
+  ]
+}
